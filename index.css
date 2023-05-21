@@ -11,8 +11,12 @@ body {
 .cards {
     display: flex;
     overflow: scroll;
-    justify-content:space-between;
+    justify-content:space-arround;
     gap: .8rem;
+    background-color: rgb(130, 111, 255);
+    padding: .2rem;
+    border-radius: .1rem;
+    width: 100%;
 }
 .card {
     min-width: 10rem;
