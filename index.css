@@ -1,0 +1,66 @@
+
+body {
+    font-size: 62.5%;
+
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+    background-color:darkslateblue;
+}
+.cards {
+    display: flex;
+    overflow: scroll;
+    justify-content:space-between;
+    gap: .8rem;
+}
+.card {
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 5%, rgb(46, 45, 110));
+    min-width: 10rem;
+    padding: .6rem;
+    border-radius: .4rem;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card:nth-child(2n){
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 5%, rgb(197, 22, 232));
+}
+.card-thumbnail {
+    object-fit:contain;
+    width: 100%;
+    border-radius: .4rem;
+}
+.card-description {
+    color: gainsboro;
+}
+.card-additional-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card-time-left {
+    justify-self: end;
+}
+.card-line {
+    border-color: gainsboro;
+    border-radius: 1em;
+}
+.card-item-creator {
+    display: flex;
+}
+.avatar {
+    display: inline;
+
+    object-fit: contain;
+    max-height: 3em;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+.creator::before {
+    color: gainsboro;
+    content: 'Creation of ';
+}
