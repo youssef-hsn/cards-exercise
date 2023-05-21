@@ -15,12 +15,13 @@ body {
     gap: .8rem;
 }
 .card {
-    background: linear-gradient(to bottom, rgb(255, 255, 255) 5%, rgb(46, 45, 110));
     min-width: 10rem;
+    max-width: 11rem;
     padding: .6rem;
     border-radius: .4rem;
 
     color: white;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 5%, rgb(46, 45, 110));
 
     display: flex;
     justify-content: center;
